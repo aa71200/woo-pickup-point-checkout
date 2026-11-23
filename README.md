@@ -25,7 +25,7 @@ Customers need to find a pickup point, and checkout must check that it still mat
 
 ## Try it in a test store
 
-Download the [verified installation ZIP](https://github.com/aa71200/woo-pickup-point-checkout/releases/tag/v1.0.0) and upload it under **Plugins → Add New → Upload Plugin**, or copy the source as described below.
+Download the [latest verified installation ZIP](https://github.com/aa71200/woo-pickup-point-checkout/releases/latest) and upload it under **Plugins → Add New → Upload Plugin**, or copy the source as described below. If version 1.0.0 is already installed, choose **Replace current with uploaded** to install the refreshed build.
 
 1. Copy the repository into the `wp-content/plugins/woo-pickup-point-checkout` folder in a WordPress test installation. Activate WooCommerce and **Pickup Point Checkout for WooCommerce**.
 2. In **WooCommerce → Settings → Shipping → Shipping zones**, add **Pickup Point Demo** to a zone. Configure its **Sample catalogue** as North District or South District. To test region changes, set up two zones with different destinations and assign a different catalogue to each. Add a normal shipping method to test switching away from pickup.

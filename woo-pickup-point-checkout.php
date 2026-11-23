@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Pickup Point Checkout for WooCommerce
  * Description: A portfolio demo for choosing and validating a pickup point at checkout.
- * Version: 1.0.1
+ * Version: 1.0.0
  * Author: CodexaWP
  * Requires at least: 7.0
  * Requires PHP: 8.2
