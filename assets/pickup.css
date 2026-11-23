@@ -1,51 +1,77 @@
 .codexawp-pickup {
+	--pickup-ink: #182a50;
+	--pickup-line: #cdd9ee;
+	--pickup-blue: #3155be;
 	box-sizing: border-box;
+	min-inline-size: 0;
 	margin: 0 0 1.25rem;
-	padding: 1rem;
-	border: 1px solid #a9b7af;
-	border-radius: .5rem;
+	padding: clamp(12px, 2.6vw, 22px);
+	border: 1px solid var(--pickup-line);
+	border-radius: 13px;
+	background: #f5f8ff;
+	color: var(--pickup-ink);
+	font-family: system-ui, sans-serif;
 }
 .codexawp-pickup legend {
-	padding-inline: .35rem;
-	font-weight: 650;
+	padding-inline: .45rem;
+	color: var(--pickup-ink);
+	font-weight: 700;
+	letter-spacing: -.018em;
 }
 .codexawp-pickup > label {
 	display: block;
-	margin-bottom: .3rem;
+	margin-bottom: .35rem;
+	color: #40547c;
+	font-size: .83rem;
+	font-weight: 650;
 }
 .codexawp-pickup input[type="search"] {
 	box-sizing: border-box;
 	width: 100%;
-	min-height: 2.75rem;
-	padding: .4rem .6rem;
-	border: 1px solid #788d83;
-	border-radius: .3rem;
+	min-height: 2.8rem;
+	padding: .5rem .7rem;
+	border: 1px solid #97a8cc;
+	border-radius: 7px;
+	background: #fff;
+	color: var(--pickup-ink);
+}
+.codexawp-pickup :is(input[type="search"], .codexawp-pickup-option):focus-visible,
+.codexawp-pickup-option:has(input:focus-visible) {
+	outline: 2px solid var(--pickup-blue);
+	outline-offset: 3px;
 }
 .codexawp-pickup-options {
 	display: grid;
-	gap: .45rem;
+	gap: .5rem;
 	margin-top: .75rem;
 }
 .codexawp-pickup-option {
 	display: flex;
 	align-items: flex-start;
-	gap: .55rem;
-	padding: .55rem;
-	border: 1px solid #c4cec8;
-	border-radius: .35rem;
+	gap: .65rem;
+	padding: .65rem .75rem;
+	border: 1px solid var(--pickup-line);
+	border-radius: 8px;
+	background: #fff;
 	cursor: pointer;
+	overflow-wrap: anywhere;
 }
+.codexawp-pickup-option:hover { border-color: #7894d7; }
 .codexawp-pickup-option:has(:checked) {
-	border-color: #36634f;
-	background: #eef6f1;
-	color: #143527;
+	border-color: var(--pickup-blue);
+	box-shadow: inset 3px 0 0 var(--pickup-blue);
+	background: #e9f0ff;
+	color: var(--pickup-ink);
 }
 .codexawp-pickup-option input[type="radio"] {
+	accent-color: var(--pickup-blue);
 	flex: 0 0 auto;
 	margin: .25rem 0 0;
 }
 .codexawp-pickup-option small {
 	display: block;
+	color: #435576;
+	font-size: .8em;
 }
 #codexawp-pickup-classic[hidden],
 .codexawp-pickup [hidden] {
