@@ -2,7 +2,24 @@
 
 A CodexaWP portfolio demo for a single-package checkout. Choose **Pickup Point**, find a location by name, address or code, and submit the order. WooCommerce staff can see the selected point in the order's shipping details.
 
-![The Checkout block with the matching Market Counter pickup point selected](docs/checkout-block.png)
+## Checkout preview
+
+<p align="center">
+  <a href="docs/checkout-block.png"><img src="docs/checkout-block.png" width="714" alt="Market Counter selected in the WooCommerce checkout pickup-point picker"></a>
+  <br>
+  <em>Block checkout · Market Counter selected after searching for NTH-02</em>
+</p>
+
+<details>
+<summary>View the saved pickup point in the order editor</summary>
+
+<p align="center">
+  <a href="docs/order-pickup-point.png"><img src="docs/order-pickup-point.png" width="240" alt="Saved pickup point and address in WooCommerce order shipping details"></a>
+  <br>
+  <em>HPOS order details · stored pickup point and address</em>
+</p>
+
+</details>
 
 ## Try it in a test store
 
@@ -11,8 +28,6 @@ A CodexaWP portfolio demo for a single-package checkout. Choose **Pickup Point**
 3. For **Checkout block**, open the checkout page in the editor and insert **Pickup Point Selector** inside **Shipping options**. For **classic checkout**, the picker loads automatically on the page with the WooCommerce checkout shortcode.
 4. Add a physical product, enter an address in a configured zone, and select **Pickup Point**. Search for **NTH-02** in the North catalogue or **STH-01** in the South catalogue. Use a test payment method to complete the order.
 5. Open the new order under **WooCommerce → Orders** and look for **Pickup point** in the shipping details.
-
-![The pickup-point name, code and address saved on a sample order](docs/order-pickup-point.png)
 
 ## Implementation
 
