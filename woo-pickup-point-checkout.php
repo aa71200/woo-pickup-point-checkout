@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Pickup Point Checkout for WooCommerce
  * Description: A portfolio demo for choosing and validating a pickup point at checkout.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: CodexaWP
  * Requires at least: 7.0
  * Requires PHP: 8.2
@@ -177,6 +177,8 @@ add_filter( 'woocommerce_update_order_review_fragments', static function ( array
 add_action( 'init', static function (): void {
 	wp_register_script( 'codexawp-pickup-editor', plugins_url( 'assets/editor.js', __FILE__ ), [ 'wp-blocks', 'wp-element', 'wp-i18n' ], '1.0.0', true );
 	wp_register_script( 'codexawp-pickup-block', plugins_url( 'assets/checkout-block.js', __FILE__ ), [ 'wc-blocks-checkout', 'wc-blocks-data-store', 'wp-data', 'wp-element', 'wp-i18n' ], '1.0.0', true );
+	wp_set_script_translations( 'codexawp-pickup-editor', 'woo-pickup-point-checkout' );
+	wp_set_script_translations( 'codexawp-pickup-block', 'woo-pickup-point-checkout' );
 	wp_register_style( 'codexawp-pickup', plugins_url( 'assets/pickup.css', __FILE__ ), [], '1.1.0' );
 	register_block_type( __DIR__ . '/block.json', [
 		'render_callback' => static fn(): string => '<div data-block-name="codexawp/pickup-point"></div>',
@@ -198,4 +200,21 @@ add_action( 'woocommerce_admin_order_data_after_shipping_address', static functi
 	}
 	echo '<p><strong>' . esc_html__( 'Pickup point', 'woo-pickup-point-checkout' ) . '</strong><br>'
 		. esc_html( $point['label'] . ' (' . $point['id'] . ')' ) . '<br>' . esc_html( $point['address'] ) . '</p>';
+} );
+
+add_action( 'admin_notices', static function (): void {
+	if ( ! function_exists( 'wc_get_page_id' ) || ! current_user_can( 'manage_woocommerce' ) ||
+		! in_array( get_current_screen()?->id, [ 'dashboard', 'woocommerce_page_wc-settings' ], true ) ) {
+		return;
+	}
+	$page_id = wc_get_page_id( 'checkout' );
+	$page = $page_id > 0 ? get_post( $page_id ) : null;
+	if ( ! $page || ! has_block( 'woocommerce/checkout', $page ) || has_block( 'codexawp/pickup-point', $page ) || ! current_user_can( 'edit_post', $page_id ) ) {
+		return;
+	}
+	echo '<div class="notice notice-warning"><p>' .
+		esc_html__( 'Pickup Point Checkout needs its Pickup Point Selector inside the Checkout block’s shipping options.', 'woo-pickup-point-checkout' ) .
+		' <a href="' . esc_url( get_edit_post_link( $page_id, 'raw' ) ) . '">' .
+		esc_html__( 'Edit the checkout page', 'woo-pickup-point-checkout' ) .
+		'</a></p></div>';
 } );
