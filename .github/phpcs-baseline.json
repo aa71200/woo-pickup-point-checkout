@@ -1,0 +1,50 @@
+{
+    "_comment": "Pre-existing findings from the portfolio review. Counts are limited to this file and sniff. Remove entries as code is corrected.",
+    "files": {
+        "includes/catalog.php": {
+            "ERROR Generic.Files.LineEndings.InvalidEOLChar": 1,
+            "ERROR Squiz.Commenting.FileComment.MissingPackageTag": 1,
+            "ERROR Squiz.Commenting.FunctionComment.Missing": 2,
+            "ERROR Universal.Arrays.DisallowShortArraySyntax.Found": 9,
+            "ERROR WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound": 6
+        },
+        "includes/class-pickup-method.php": {
+            "ERROR Generic.Files.LineEndings.InvalidEOLChar": 1,
+            "ERROR PEAR.Functions.FunctionCallSignature.CloseBracketLine": 1,
+            "ERROR PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket": 1,
+            "ERROR Squiz.Commenting.ClassComment.Missing": 1,
+            "ERROR Squiz.Commenting.FileComment.Missing": 1,
+            "ERROR Squiz.Commenting.FunctionComment.Missing": 2,
+            "ERROR Universal.Arrays.DisallowShortArraySyntax.Found": 7,
+            "WARNING Generic.Formatting.MultipleStatementAlignment.NotSameWarning": 7
+        },
+        "tests/catalog.php": {
+            "ERROR Generic.Files.LineEndings.InvalidEOLChar": 1,
+            "ERROR Squiz.Commenting.FileComment.Missing": 1,
+            "ERROR Universal.Arrays.DisallowShortArraySyntax.Found": 3,
+            "ERROR WordPress.Security.EscapeOutput.ExceptionNotEscaped": 1,
+            "ERROR WordPress.Security.EscapeOutput.OutputNotEscaped": 1,
+            "WARNING WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned": 6
+        },
+        "tests/check.php": {
+            "ERROR Squiz.Commenting.FileComment.Missing": 1,
+            "ERROR Universal.Arrays.DisallowShortArraySyntax.Found": 2
+        },
+        "woo-pickup-point-checkout.php": {
+            "ERROR Generic.Files.LineEndings.InvalidEOLChar": 1,
+            "ERROR PEAR.Functions.FunctionCallSignature.CloseBracketLine": 15,
+            "ERROR PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket": 15,
+            "ERROR PEAR.Functions.FunctionCallSignature.MultipleArguments": 17,
+            "ERROR Squiz.Commenting.FileComment.MissingPackageTag": 1,
+            "ERROR Squiz.Commenting.FunctionComment.Missing": 5,
+            "ERROR Universal.Arrays.DisallowShortArraySyntax.Found": 26,
+            "ERROR WordPress.Arrays.ArrayDeclarationSpacing.AssociativeArrayFound": 5,
+            "ERROR WordPress.Arrays.ArrayKeySpacingRestrictions.NoSpacesAroundArrayKeys": 6,
+            "ERROR WordPress.Security.EscapeOutput.ExceptionNotEscaped": 1,
+            "ERROR WordPress.Security.ValidatedSanitizedInput.MissingUnslash": 1,
+            "WARNING Generic.Formatting.MultipleStatementAlignment.NotSameWarning": 8,
+            "WARNING WordPress.Arrays.MultipleStatementAlignment.DoubleArrowNotAligned": 3,
+            "WARNING WordPress.WP.Capabilities.Unknown": 1
+        }
+    }
+}
