@@ -11,16 +11,18 @@ Customers need to find a pickup point, and checkout must check that it still mat
 ## Checkout preview
 
 <p align="center">
-  <a href="docs/checkout-block.png"><img src="docs/checkout-block.png" width="714" alt="Market Counter selected in the WooCommerce checkout pickup-point picker"></a>
+  <a href="docs/checkout-block.png"><img src="docs/checkout-block.png" width="714" alt="Harbor Locker selected in the WooCommerce Block Checkout pickup-point picker"></a>
   <br>
-  <em>Block checkout · Market Counter selected after searching for NTH-02</em>
+  <em>Block checkout · Harbor Locker selected for a New York shipping address</em>
 </p>
+
+[Classic Checkout pickup panel](docs/checkout-classic.png) · [Mobile pickup panel](docs/checkout-mobile.png)
 
 <details>
 <summary>View the saved pickup point in the order editor</summary>
 
 <p align="center">
-  <a href="docs/order-pickup-point.png"><img src="docs/order-pickup-point.png" width="240" alt="Saved pickup point and address in WooCommerce order shipping details"></a>
+  <a href="docs/order-pickup-point.png"><img src="docs/order-pickup-point.png" width="760" alt="Harbor Locker and its saved pickup address in WooCommerce order shipping details"></a>
   <br>
   <em>HPOS order details · stored pickup point and address</em>
 </p>
