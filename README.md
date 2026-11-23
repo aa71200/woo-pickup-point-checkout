@@ -1,6 +1,6 @@
 # Pickup Point Checkout for WooCommerce
 
-A CodexaWP portfolio demo for a single-package checkout. Choose **Pickup Point**, find a location by name, address or code, and submit the order. WooCommerce staff can see the selected point in the order's shipping details.
+Customers need to find a pickup point, and checkout must check that it still matches their shipping address. This CodexaWP sample adds searchable pickup selection to a single-package checkout and saves the validated point on the order.
 
 ## Checkout preview
 
