@@ -1,0 +1,12 @@
+{
+  "apiVersion": 3,
+  "name": "codexawp/pickup-point",
+  "title": "Pickup Point Selector",
+  "category": "woocommerce",
+  "parent": ["woocommerce/checkout-shipping-methods-block"],
+  "textdomain": "woo-pickup-point-checkout",
+  "supports": { "html": false, "multiple": false },
+  "editorScript": "codexawp-pickup-editor",
+  "viewScript": "codexawp-pickup-block",
+  "style": "codexawp-pickup"
+}

@@ -1,0 +1,56 @@
+.codexawp-pickup {
+	box-sizing: border-box;
+	margin: 0 0 1.25rem;
+	padding: 1rem;
+	border: 1px solid #a9b7af;
+	border-radius: .5rem;
+}
+.codexawp-pickup legend {
+	padding-inline: .35rem;
+	font-weight: 650;
+}
+.codexawp-pickup > label {
+	display: block;
+	margin-bottom: .3rem;
+}
+.codexawp-pickup input[type="search"] {
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 2.75rem;
+	padding: .4rem .6rem;
+	border: 1px solid #788d83;
+	border-radius: .3rem;
+}
+.codexawp-pickup-options {
+	display: grid;
+	gap: .45rem;
+	margin-top: .75rem;
+}
+.codexawp-pickup-option {
+	display: flex;
+	align-items: flex-start;
+	gap: .55rem;
+	padding: .55rem;
+	border: 1px solid #c4cec8;
+	border-radius: .35rem;
+	cursor: pointer;
+}
+.codexawp-pickup-option:has(:checked) {
+	border-color: #36634f;
+	background: #eef6f1;
+	color: #143527;
+}
+.codexawp-pickup-option input[type="radio"] {
+	flex: 0 0 auto;
+	margin: .25rem 0 0;
+}
+.codexawp-pickup-option small {
+	display: block;
+}
+#codexawp-pickup-classic[hidden],
+.codexawp-pickup [hidden] {
+	display: none;
+}
+.codexawp-pickup-empty {
+	margin: .6rem 0 0;
+}
