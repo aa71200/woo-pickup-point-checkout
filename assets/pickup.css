@@ -1,27 +1,28 @@
 .codexawp-pickup {
-	--pickup-ink: #182a50;
-	--pickup-line: #cdd9ee;
-	--pickup-blue: #3155be;
+	--pickup-ink: #18362e;
+	--pickup-line: #cbded6;
+	--pickup-blue: #226b57;
 	box-sizing: border-box;
 	min-inline-size: 0;
 	margin: 0 0 1.25rem;
 	padding: clamp(12px, 2.6vw, 22px);
 	border: 1px solid var(--pickup-line);
-	border-radius: 13px;
-	background: #f5f8ff;
+	border-radius: 16px;
+	background: #f3f8f5;
 	color: var(--pickup-ink);
 	font-family: system-ui, sans-serif;
 }
 .codexawp-pickup legend {
 	padding-inline: .45rem;
 	color: var(--pickup-ink);
-	font-weight: 700;
+	font-weight: 720;
+	font-size: 1.05rem;
 	letter-spacing: -.018em;
 }
 .codexawp-pickup > label {
 	display: block;
 	margin-bottom: .35rem;
-	color: #40547c;
+	color: #3a5b50;
 	font-size: .83rem;
 	font-weight: 650;
 }
@@ -30,8 +31,8 @@
 	width: 100%;
 	min-height: 2.8rem;
 	padding: .5rem .7rem;
-	border: 1px solid #97a8cc;
-	border-radius: 7px;
+	border: 1px solid #8eac9f;
+	border-radius: 9px;
 	background: #fff;
 	color: var(--pickup-ink);
 }
@@ -49,18 +50,17 @@
 	display: flex;
 	align-items: flex-start;
 	gap: .65rem;
-	padding: .65rem .75rem;
+	padding: .8rem .9rem;
 	border: 1px solid var(--pickup-line);
-	border-radius: 8px;
+	border-radius: 10px;
 	background: #fff;
 	cursor: pointer;
 	overflow-wrap: anywhere;
 }
-.codexawp-pickup-option:hover { border-color: #7894d7; }
+.codexawp-pickup-option:hover { border-color: #629782; }
 .codexawp-pickup-option:has(:checked) {
 	border-color: var(--pickup-blue);
-	box-shadow: inset 3px 0 0 var(--pickup-blue);
-	background: #e9f0ff;
+	background: #dcefe5;
 	color: var(--pickup-ink);
 }
 .codexawp-pickup-option input[type="radio"] {
@@ -70,7 +70,8 @@
 }
 .codexawp-pickup-option small {
 	display: block;
-	color: #435576;
+	color: #405e53;
+	margin-block-start: .2rem;
 	font-size: .8em;
 }
 #codexawp-pickup-classic[hidden],

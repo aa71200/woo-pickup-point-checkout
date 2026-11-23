@@ -179,7 +179,7 @@ add_action( 'init', static function (): void {
 	wp_register_script( 'codexawp-pickup-block', plugins_url( 'assets/checkout-block.js', __FILE__ ), [ 'wc-blocks-checkout', 'wc-blocks-data-store', 'wp-data', 'wp-element', 'wp-i18n' ], '1.0.0', true );
 	wp_set_script_translations( 'codexawp-pickup-editor', 'woo-pickup-point-checkout' );
 	wp_set_script_translations( 'codexawp-pickup-block', 'woo-pickup-point-checkout' );
-	wp_register_style( 'codexawp-pickup', plugins_url( 'assets/pickup.css', __FILE__ ), [], '1.1.0' );
+	wp_register_style( 'codexawp-pickup', plugins_url( 'assets/pickup.css', __FILE__ ), [], '1.2.0' );
 	register_block_type( __DIR__ . '/block.json', [
 		'render_callback' => static fn(): string => '<div data-block-name="codexawp/pickup-point"></div>',
 	] );

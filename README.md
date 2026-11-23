@@ -1,5 +1,9 @@
 # Pickup Point Checkout for WooCommerce
 
+The refreshed screenshots show a development build on a local test store. The installation ZIP links to the published release.
+
+**What to try.** Install the demo and use the checkout fixture to see how a new address changes the available pickup points.
+
 [![Standalone PHP checks](https://github.com/aa71200/woo-pickup-point-checkout/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/aa71200/woo-pickup-point-checkout/actions/workflows/checks.yml)
 
 Customers need to find a pickup point, and checkout must check that it still matches their shipping address. This CodexaWP sample adds searchable pickup selection to a single-package checkout and saves the validated point on the order.
