@@ -4,7 +4,9 @@ declare(strict_types=1);
 use function CodexaWP\PickupPoint\active_points;
 use function CodexaWP\PickupPoint\find_point;
 
-require __DIR__ . '/../includes/catalog.php';
+if ( ! function_exists( 'CodexaWP\PickupPoint\active_points' ) ) {
+	require __DIR__ . '/../includes/catalog.php';
+}
 
 $north = active_points( 'north' );
 $south = active_points( 'south' );

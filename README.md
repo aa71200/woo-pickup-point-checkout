@@ -51,6 +51,8 @@ A local WordPress 7.1.3, WooCommerce 11.1.2 and PHP 8.2.12 fixture exercised sea
 
 The demo uses fictional pickup points and fixed regional catalogues. Created for CodexaWP with AI assistance.
 
+The shared checkout fixture exercises Classic and Blocks in a disposable store and reads the persisted HPOS order. Its address-change scenario checks that the old point clears before the new region's point can be saved. The local PHP checks exercise catalogue validation without starting WordPress. The checkout admin notice links to the editor when the active block checkout page has no selector.
+
 ## License
 
 GPL-2.0-or-later. See [LICENSE](LICENSE).

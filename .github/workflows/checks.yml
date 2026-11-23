@@ -19,3 +19,9 @@ jobs:
           php-version: '8.2'
           coverage: none
       - run: php tests/catalog.php
+  wordpress:
+    uses: aa71200/aa71200/.github/workflows/wordpress-fixture.yml@10a7928ac03ca42b987e9da56759c2fa8944fe44
+    with:
+      harness_ref: 10a7928ac03ca42b987e9da56759c2fa8944fe44
+      activate: true
+      browser: true
